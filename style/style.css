@@ -29,6 +29,7 @@ header{
     
 }
 
+
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: inline-block;
@@ -59,6 +60,7 @@ li{
     position: relative;
     top: 0%;
     
+    
 
 }
 
@@ -67,6 +69,12 @@ li{
 a{
     text-decoration: none;
     color: white;
+   
+    
+}
+a:hover{
+    color: black;
+    
 }
 
 
@@ -74,12 +82,12 @@ a{
 /*main home*/
 
 body{
-    background-color: rgb(109, 107, 107);
+    background-color:  rgb(109, 107, 107);
 }
 
 main{
    
-    background-color: rgb(109, 107, 107);
+    background-color:  rgb(109, 107, 107);
     height: 1500px;
 }
 
@@ -110,9 +118,26 @@ div{
 h2{
     color: rgb(132, 50, 165) ;
     text-decoration: none;
-    text-align: center;
-    
+    text-align: center;   
 }
+.verClasesAca{
+    color: rgb(132, 50, 165) ;
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    animation-name: opaco;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes opaco{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 .productosHome{
     grid-area: nuestrosProductos;
     display: flex;
@@ -136,8 +161,28 @@ h2{
 .nuestrosProductos{
     color: black;
 }
+.fotoDos:hover{
+    width: 250px;
+    height: 250px;
+}
+.kitFuncional:hover{
+    width: 250px;
+    height: 250px;
+}
+.trx:hover{
+    width: 250px;
+    height: 250px;
+}
 
 /*main galeria*/
+
+.nuestrasClases{
+    background-color: rgb(132, 50, 165) ;
+    color: black;
+    position: relative;
+    font-size: 40px;
+}
+
 
 .videoClases{
     display: grid;
@@ -152,8 +197,8 @@ h2{
 
 }
 .videoUno{
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
 }
 .videoDos{
     width: 450px;
@@ -305,6 +350,7 @@ footer{
         width: 150px;
         height: 150px;
     }
+  
     h1{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: blanchedalmond;
@@ -412,20 +458,20 @@ footer{
     
     }
     .videoUno{
-        width: 350px;
-        height: 350px;
+        width: 500px;
+        height: 500px;
     }
     .videoDos{
-        width: 350px;
-        height: 350px;
+        width: 500px;
+        height: 500px;
     }
     .videoTres{
-        width: 350px;
-        height: 350px;
+        width: 500px;
+        height: 500px;
     }
     .videoCuatro{
-        width: 350px;
-        height: 350px;
+        width: 500px;
+        height: 500px;
     }
 
     /* main productos */
