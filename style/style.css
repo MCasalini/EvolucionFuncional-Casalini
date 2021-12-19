@@ -10,8 +10,8 @@ header{
     height: 300px;
     top: 10px;
     display: flex;
-    align-items: flex-start;
-    
+    align-items: flex-end;
+    justify-content: end;
 }
 
 .logoNombre{
@@ -41,15 +41,15 @@ h1{
 }
 
 
-.barraNavegacion{
+
+/* .barraNavegacion{
     display: inline-block;
     text-decoration: none;
-    
     height: 100%;    
-}
+} */
 
 
-li{
+/* li{
     display: inline-block;
     background-color: rgb(132, 50, 165);
     font-size: 20px;
@@ -62,20 +62,9 @@ li{
     
     
 
-}
+} */
 
 
-
-a{
-    text-decoration: none;
-    color: white;
-   
-    
-}
-a:hover{
-    color: black;
-    
-}
 
 
 
@@ -179,6 +168,13 @@ h2{
     width: 250px;
     height: 250px;
 }
+.iconoWhatsapp{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 70px;
+    height: 60px;
+}
 
 /*main galeria*/
 
@@ -187,6 +183,7 @@ h2{
     color: black;
     position: relative;
     font-size: 40px;
+    width: 100%;
 }
 
 
@@ -308,12 +305,9 @@ h2{
     grid-area: enviar;
 }
 
-.contactanos{
-    background-color: rgb(132, 50, 165) ;
-    color: black;
-    position: relative;
+
    
-}
+
 .mapa{
     height: 400px;
     width: 400px;
@@ -329,7 +323,7 @@ h2{
 
 
 /*footer*/
-footer{
+/* footer{
     background-color: black;
     color: blueviolet;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -338,13 +332,80 @@ footer{
     height: 100px;
     justify-content: center;
     align-items: center;
+} */
+footer{
+    background-color: black;
+    display: grid;
+    height: 400px;
+    grid-template-columns: 30%, 25%, 25%;
+    grid-template-rows: 20%, 20%, 20%, 20%;
+    grid-template-areas: "area3 area1 area2"
+                         "area3 area4 area5"
+                         "area3 area6 area7"
+                         "area8 area8 area8";
 }
-.logosFooter{
-    display: inline-block;
+.sobreNos{
+    grid-area: area1;
+    justify-self: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+
+}
+.redes{
+    grid-area: area2;
+    justify-self: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.donde{
+    grid-area: area4;
+    justify-self: center;
+    color: white;
+}
+.donde:hover{
+    color: rgb(132, 50, 165);
+}
+
+.contacto{
+    grid-area: area6;
+    justify-self: center;
+    color: white;
+}
+.contacto:hover{
+    color: rgb(132, 50, 165);
+}
+.logoFooterFc{
+  
     width: 50px;
     height: 50px;
-    position: relative;
-    left: 60%;
+    grid-area: area5;
+    justify-self: center;
+    
+
+}
+.logoFooterIg{
+    
+    width: 50px;
+    height: 50px;
+    grid-area: area7;
+    justify-self: center;
+  
+}
+.logoFooter{
+    width: 200px;
+    height: 200px;
+    grid-area: area3;
+    justify-self: center;
+}
+.pFooter{
+    grid-area: area8;
+    justify-self: center;
+    color: rgb(132, 50, 165);
+    font-size: 20px;
 }
 
 /* media querie mobile */
@@ -559,15 +620,23 @@ footer{
     
     
     .barraNavegacion{
-        display: inline-block;
-        text-decoration: none;
-        width: 100%;
-        height: 100%;    
-    }
-    ul{
         display: flex;
-        flex-direction: row;
+        justify-content: end;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;  
     }
+    .navbar{
+        width: 100%;
+        bottom: 20px;
+    }
+    .navbar-nav{
+        width: 100%;
+        background-color: rgb(132, 50, 165);
+
+    }
+
+ 
     
     
     li{

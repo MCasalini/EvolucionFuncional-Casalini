@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../style/style.css">
     <title>evolucion funcional</title>
 </head>
@@ -19,44 +21,39 @@
                 <h1>EVOLUCIÓN FUNCIONAL </h1>
         </div>
         <div class="barraNavegacion">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                  <h5 class="text-white h4"><nav>
-                    <ul>
-                        <li>
-                            <a href="../index.html"> HOME</a>
-                        </li>
-                        <li>
-                            <a href="galeria.html"> GALERIA</a>
-                        </li>
-                        <li>
-                            <a href="horarios.html"> HORARIOS</a>
-                        </li>
-                        <li>
-                            <a href="productos.html"> PRODUCTOS</a>
-                        </li>
-                        <li>
-                            <a href="contacto.html"> CONTACTO</a>
-                        </li>
-                    </ul>
-                </nav></h5>
-                  
-                </div>
-              </div>
-              <nav class="navbar navbar-dark bg-dark">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-              </nav>
-        </div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-darkt">
+                 <div class="container-fluid">
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarText">
+                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                             <li class="nav-item">
+                                 <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="galeria.html"> GALERIA</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="horarios.html"> HORARIOS</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="productos.html"> PRODUCTOS</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="contacto.html"> CONTACTO</a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </nav>
+         </div>
     </header>
 
     <!-- main -->
     <main>
         <div class="divContactanos">
-            <h2 class="contactanos">CONTACTANOS</h2>
+            <h2 class="animate__animated animate__lightSpeedInLeft nuestrasClases">CONTACTANOS</h2>
             <div class="formularioContacto">  
                 <form class="formContacto" action="">
                     <input class="nombre" type="text" name="Nombre" id="Nombre" placeholder="Nombre">
@@ -73,20 +70,33 @@
         </div>
             
         <div class="comoLlegar">
-            <h2 class="contactanos"> Cómo llegar </h2>
+            <h2 class="animate__animated animate__lightSpeedInLeft nuestrasClases"> Cómo llegar </h2>
             <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.2994020684528!2d-62.22731788500415!3d-38.73389117959617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda302fb671167%3A0x17bfca126b619d9c!2s3%20de%20Febrero%202800%2C%20B8001CYD%20Bah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1636314391068!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
+        <a href="https://web.whatsapp.com/">
+            <img class="iconoWhatsapp" src="../img/whatsaap.png" alt="icono whatsaap">
+        </a>
     </main>
 
 <!-- footer -->
 <footer>
+    <img class="logoFooter" src="../img/Logo1.jpg" alt="LogoEvolucionFuncional">
+    <p class="sobreNos">Sobre Evolución Funcional</p>
+    <a class="donde" href="../pages/contacto.html">
+        <p class="donde">¿Dónde estamos?</p>
+    </a>
+    <a class="contacto" href="../pages/contacto.html">
+        <p class="contacto">Contacto</p>
+    </a>
+    <p class="redes">Redes Sociales</p>
+    <a class="logoFooterFc" href="https://www.facebook.com/">
+        <img class="logoFooterFc" src="../img/facebookNegro.png" alt="facebook">
+    </a>
+    <a class="logoFooterIg" href="https://www.instagram.com/">
+        <img class="logoFooterIg" src="../img/instagramNegro.png" alt="instagram">
+    </a>
     <p class="pFooter">EVOLUCION FUNCIONAL creado por Marina</p>
-    <a href="https://www.facebook.com/">
-        <img class="logosFooter" src="../img/facebook.png" alt="facebook">
-    </a>
-    <a href="https://www.instagram.com/">
-        <img class="logosFooter" src="../img/instagram.png" alt="instagram">
-    </a>
+    
 </footer>
     
 </body>
