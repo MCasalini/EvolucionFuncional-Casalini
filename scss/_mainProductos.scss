@@ -1,0 +1,21 @@
+.mainProductos{
+    
+   
+    background-color:  rgb(109, 107, 107);
+    height: 2500px;
+    .nuestrosProductos{
+        @extend .nuestrasClases;
+    }
+
+    .productos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        align-items: center;
+        
+        }
+
+}
+
+

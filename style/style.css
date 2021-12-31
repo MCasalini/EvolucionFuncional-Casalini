@@ -1,194 +1,198 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
-/* HEADER */
-
-header{
-    background-color: black;
-    height: 300px;
-    top: 10px;
+header {
+  background-color: black;
+  height: 350px;
+  top: 10px;
+  display: flex;
+  align-items: flex-start; }
+  header .logoNombre {
+    display: inline-block; }
+    header .logoNombre a {
+      text-decoration: none; }
+      header .logoNombre a .logo {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        position: relative; }
+    header .logoNombre h1 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      display: inline-block;
+      color: blanchedalmond;
+      width: 200px;
+      text-align: center;
+      position: relative;
+      bottom: 20%; }
+  header .barraNavegacion {
     display: flex;
-    align-items: flex-end;
     justify-content: end;
-}
-
-.logoNombre{
-    display: inline-block;
-}
-
-
-
-.logo{
-    
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    position: relative;
-    
-}
-
-
-h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: inline-block;
-    color: blanchedalmond;
-    width: 200px;
-    text-align:center;
-    position: relative;
-    bottom: 20%;
-}
-a{text-decoration: none;}
-
-
-
-/* .barraNavegacion{
-    display: inline-block;
-    text-decoration: none;
-    height: 100%;    
-} */
-
-
-/* li{
-    display: inline-block;
-    background-color: rgb(132, 50, 165);
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    height: 100%;
-    text-decoration: none;
-    position: relative;
-    top: 0%;
-    
-    
-
-} */
-
-
-
-
-
-/*main home*/
-
-body{
-    background-color:  rgb(109, 107, 107);
-}
-
-main{
-   
-    background-color:  rgb(109, 107, 107);
-    height: 1500px;
-}
-
-.mainHome{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 500px 70px 800px;
-    grid-template-areas: "banner"
-                         "nuestrasClases"
-                         "nuestrosProductos";
-
-}
-
-div{
-    margin-top: 20px;
-}
-.banner{
-    grid-area: banner;
+    align-items: flex-end;
     width: 100%;
-    height: 100%;
-}
-.carousel-inner{
-    grid-area: banner;
-    width: 100%;
-    height: 100%;
-}
+    height: 100%; }
+    header .barraNavegacion .navbar {
+      width: 100%;
+      bottom: 20px; }
+      header .barraNavegacion .navbar .navbar-nav {
+        width: 100%;
+        background-color: #8432a5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
 
-.clasesHome{
-    grid-area: nuestrasClases;
-    background-color: black;
-    text-decoration: none;
-    
-}
-h2{
-    color: rgb(132, 50, 165) ;
-    text-decoration: none;
-    text-align: center;   
-}
-.verClasesAca{
-    color: rgb(132, 50, 165) ;
-    text-decoration: none;
-    text-align: center;
-    font-size: 40px;
-    animation-name: opaco;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-@keyframes opaco{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-
-.productosHome{
-    grid-area: nuestrosProductos;
+/* media querie mobile */
+@media only screen and (max-width: 600px) {
+  header {
     display: flex;
     flex-direction: column;
-   justify-content: space-evenly;
-    align-items: center;
-    
-}
-.fotoDos{
-    width: 200px;
-    height: 200px;
-}
-.kitFuncional{
-    width: 200px;
-    height: 200px;
-}
-.trx{
-    width: 200px;
-    height: 200px;
-}
-.nuestrosProductos{
-    color: black;
-}
-.fotoDos:hover{
-    width: 250px;
-    height: 250px;
-}
-.kitFuncional:hover{
-    width: 250px;
-    height: 250px;
-}
-.trx:hover{
-    width: 250px;
-    height: 250px;
-}
-.iconoWhatsapp{
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 70px;
-    height: 60px;
-}
-
-/*main galeria*/
-
-.nuestrasClases{
-    background-color: rgb(132, 50, 165) ;
-    color: black;
-    position: relative;
-    font-size: 40px;
     width: 100%;
-}
+    height: 400px;
+    align-items: center; }
+    header .logo {
+      width: 150px;
+      height: 150px; }
+    header .container-fluid {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    header .navbar-collapse {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      header .navbar-collapse .navbar-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; } }
 
+body {
+  background-color: #6d6b6b; }
+  body main {
+    background-color: #6d6b6b;
+    height: 1600px; }
+    body main .mainHome {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 500px 70px 800px;
+      grid-template-areas: "banner" "nuestrasClases" "nuestrosProductos"; }
+    body main .carousel-inner {
+      grid-area: banner;
+      width: 100%;
+      height: 100%; }
+    body main .clasesHome {
+      grid-area: nuestrasClases;
+      background-color: black;
+      text-decoration: none; }
+      body main .clasesHome a {
+        text-decoration: none; }
+        body main .clasesHome a h2 {
+          color: #8432a5;
+          text-decoration: none;
+          text-align: center; }
+        body main .clasesHome a .verClasesAca {
+          color: #8432a5;
+          text-decoration: none;
+          text-align: center;
+          font-size: 40px;
+          animation-name: opaco;
+          animation-duration: 5s;
+          animation-iteration-count: infinite; }
 
-.videoClases{
+@keyframes opaco {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+    body main .productosHome {
+      grid-area: nuestrosProductos;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      body main .productosHome .fotoDos {
+        width: 200px;
+        height: 200px; }
+      body main .productosHome .kitFuncional {
+        width: 200px;
+        height: 200px;
+        margin-top: 40px; }
+      body main .productosHome .trx {
+        width: 200px;
+        height: 200px;
+        margin-top: 40px; }
+      body main .productosHome .nuestrosProductos {
+        color: black; }
+      body main .productosHome .fotoDos:hover {
+        width: 250px;
+        height: 250px; }
+      body main .productosHome .kitFuncional:hover {
+        width: 250px;
+        height: 250px; }
+      body main .productosHome .trx:hover {
+        width: 250px;
+        height: 250px; }
+    body main div {
+      margin-top: 20px; }
+    body main .iconoWhatsapp {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      width: 70px;
+      height: 60px; }
+
+.nuestrasClases, .nuestrosHorarios, .mainProductos .nuestrosProductos, .divContactanos .contactanos, .comoLlegar .tituloComoLlegar {
+  background-color: #8432a5;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  width: 100%; }
+
+.videoClases {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 45% 45%;
+  justify-items: center;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 50px;
+  height: 100%; }
+  .videoClases .videoUno {
+    width: 450px;
+    height: 450px; }
+  .videoClases .videoDos {
+    width: 450px;
+    height: 450px; }
+  .videoClases .videoTres {
+    width: 450px;
+    height: 450px; }
+  .videoClases .videoCuatro {
+    width: 450px;
+    height: 450px; }
+
+/* media querie mobile */
+@media only screen and (max-width: 600px) {
+  .videoClases {
+    display: flex;
+    flex-direction: column; }
+    .videoClases .videoUno {
+      width: 200px;
+      height: 200px; }
+    .videoClases .videoDos {
+      width: 200px;
+      height: 200px; }
+    .videoClases .videoTres {
+      width: 200px;
+      height: 200px; }
+    .videoClases .videoCuatro {
+      width: 200px;
+      height: 200px; } }
+
+/* media querie medio */
+@media only screen and (min-width: 600px) {
+  .videoClases {
     display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: 45% 45%;
@@ -196,494 +200,168 @@ h2{
     align-items: center;
     column-gap: 10px;
     row-gap: 50px;
-    height: 100%;
+    height: 100%; }
+    .videoClases .videoUno {
+      width: 250px;
+      height: 250px; }
+    .videoClases .videoDos {
+      width: 250px;
+      height: 250px; }
+    .videoClases .videoTres {
+      width: 250px;
+      height: 250px; }
+    .videoClases .videoCuatro {
+      width: 250px;
+      height: 250px; } }
 
-
-}
-.videoUno{
-    width: 500px;
-    height: 500px;
-}
-.videoDos{
-    width: 450px;
-    height: 450px;
-}
-.videoTres{
-    width: 450px;
-    height: 450px;
-}
-.videoCuatro{
-    width: 450px;
-    height: 450px;
-}
-
-/*main horarios*/
-
-.mainHorarios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.imgHorarios{
-    width: 600px;
-    height: 700px;
-    border: 6px solid black;
-    margin-top: 50px;
-}
-
-
-/*main productos*/
-.mainProductos{
-    
-   
-        background-color:  rgb(109, 107, 107);
-        height: 2400px;
-
-}
-.productos{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    align-items: center;
-}
-.fotosProductos{
-    height: 150px;
-    width: 150px;
-}
-
-/*main contacto*/
-
-.divContactanos{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    
-    
-}
-.formularioContacto{
-    width: 500px;
-   
-}
-.formContacto{
+/* media querie grande */
+@media only screen and (min-width: 992px) {
+  .videoClases {
     display: grid;
     grid-template-columns: 45% 45%;
-    grid-template-rows: 10% 10% 20% 10% 10%;
-    grid-template-areas: "nombre apellido"
-                         "mail telefono"
-                         "consulta consulta"
-                         "checkbox aceptoT"
-                         "reset enviar";
-    width: 500px;
+    grid-template-rows: 45% 45%;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 50px;
+    height: 100%; }
+    .videoClases .videoUno {
+      width: 450px;
+      height: 450px; }
+    .videoClases .videoDos {
+      width: 450px;
+      height: 450px; }
+    .videoClases .videoTres {
+      width: 450px;
+      height: 450px; }
+    .videoClases .videoCuatro {
+      width: 450px;
+      height: 450px; } }
 
-}
-.nombre{
-    grid-area: nombre;
-}
-.apellido{
-    grid-area: apellido;
-}
-.mail{
-    grid-area: mail;
-}
-.telefono{
-    grid-area: telefono;
-}
-.consulta{
-    grid-area: consulta;
-}
-.checkbox{
-    grid-area: checkbox;
-}
-.aceptoT{
-    grid-area: aceptoT;
-}
-.reset{
-    grid-area: reset;
-}
-.enviar{
-    grid-area: enviar;
-}
-
-
-   
-
-.mapa{
-    height: 400px;
-    width: 400px;
-    
-}
-.comoLlegar{
+.mainProductos {
+  background-color: #6d6b6b;
+  height: 2500px; }
+  .mainProductos .productos {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-}
+    height: 100%;
+    align-items: center; }
 
+.divContactanos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .divContactanos .formularioContacto {
+    width: 500px; }
+    .divContactanos .formularioContacto .formContacto {
+      display: grid;
+      grid-template-columns: 45% 45%;
+      grid-template-rows: 10% 10% 20% 10% 10%;
+      grid-template-areas: "nombre apellido" "mail telefono" "consulta consulta" "checkbox aceptoT" "reset enviar";
+      width: 500px; }
+      .divContactanos .formularioContacto .formContacto .nombre {
+        grid-area: nombre;
+        font-size: 25px;
+        font-family: Verdana;
+        background-color: #ad9bac; }
+      .divContactanos .formularioContacto .formContacto .apellido {
+        grid-area: apellido;
+        font-size: 25px;
+        font-family: Verdana;
+        background-color: #ad9bac; }
+      .divContactanos .formularioContacto .formContacto .mail {
+        grid-area: mail;
+        font-size: 25px;
+        font-family: Verdana;
+        background-color: #ad9bac; }
+      .divContactanos .formularioContacto .formContacto .telefono {
+        grid-area: telefono;
+        font-size: 25px;
+        font-family: Verdana;
+        background-color: #ad9bac; }
+      .divContactanos .formularioContacto .formContacto .consulta {
+        grid-area: consulta;
+        font-size: 25px;
+        font-family: Verdana;
+        background-color: #ad9bac; }
+      .divContactanos .formularioContacto .formContacto .checkbox {
+        grid-area: checkbox; }
+      .divContactanos .formularioContacto .formContacto .aceptoT {
+        grid-area: aceptoT; }
+      .divContactanos .formularioContacto .formContacto .reset {
+        grid-area: reset;
+        font-size: 25px;
+        font-family: Verdana;
+        background-color: #ec5959; }
+      .divContactanos .formularioContacto .formContacto .enviar {
+        grid-area: enviar;
+        font-size: 25px;
+        font-family: Verdana;
+        background-color: #60f078; }
 
-
-/*footer*/
-/* footer{
-    background-color: black;
-    color: blueviolet;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    width: 100%;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-} */
-footer{
-    background-color: black;
-    display: grid;
+.comoLlegar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .comoLlegar .mapa {
     height: 400px;
-    grid-template-columns: 30%, 25%, 25%;
-    grid-template-rows: 20%, 20%, 20%, 20%;
-    grid-template-areas: "area3 area1 area2"
-                         "area3 area4 area5"
-                         "area3 area6 area7"
-                         "area8 area8 area8";
-}
-.sobreNos{
+    width: 400px; }
+
+footer {
+  background-color: black;
+  display: grid;
+  height: 400px;
+  grid-template-columns: 30%, 25%, 25%;
+  grid-template-rows: 20%, 20%, 20%, 20%;
+  grid-template-areas: "area3 area1 area2" "area3 area4 area5" "area3 area6 area7" "area8 area8 area8"; }
+  footer .sobreNos {
     grid-area: area1;
     justify-self: center;
     color: white;
     font-weight: bold;
     font-size: 20px;
-    text-decoration: underline;
-
-}
-.redes{
+    text-decoration: underline; }
+  footer .redes {
     grid-area: area2;
     justify-self: center;
     color: white;
     font-weight: bold;
     font-size: 20px;
-    text-decoration: underline;
-}
-.donde{
+    text-decoration: underline; }
+  footer .donde {
     grid-area: area4;
     justify-self: center;
     color: white;
-}
-.donde:hover{
-    color: rgb(132, 50, 165);
-}
-
-.contacto{
+    text-decoration: none; }
+  footer .donde:hover {
+    color: #8432a5; }
+  footer .contacto {
     grid-area: area6;
     justify-self: center;
     color: white;
-}
-.contacto:hover{
-    color: rgb(132, 50, 165);
-}
-.logoFooterFc{
-  
+    text-decoration: none; }
+  footer .contacto:hover {
+    color: #8432a5; }
+  footer .logoFooterFc {
     width: 50px;
     height: 50px;
     grid-area: area5;
-    justify-self: center;
-    
-
-}
-.logoFooterIg{
-    
+    justify-self: center; }
+  footer .logoFooterIg {
     width: 50px;
     height: 50px;
     grid-area: area7;
-    justify-self: center;
-  
-}
-.logoFooter{
+    justify-self: center; }
+  footer .logoFooter {
     width: 200px;
     height: 200px;
     grid-area: area3;
-    justify-self: center;
-}
-.pFooter{
+    justify-self: center; }
+  footer .pFooter {
     grid-area: area8;
     justify-self: center;
-    color: rgb(132, 50, 165);
-    font-size: 20px;
-}
-
-/* media querie mobile */
-@media only screen and (max-width: 600px){
-    
-    header{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 400px;
-        align-items: center;
-    }
- 
-
-    .logo{
-        width: 150px;
-        height: 150px;
-    }
-  
-    h1{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: blanchedalmond;
-        width: 200px;
-        text-align:center;
-        position: relative;
-        bottom: 20%;
-    }
-    ul{
-        display: flex;
-        flex-direction: column;
-    }
-    .barraNavegacion{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;  
-    }
-     /* main galeria */
-     .videoClases{
-       display: flex;
-       flex-direction: column;
-    }
-    .videoUno{
-        width: 200px;
-        height: 200px;
-    }
-    .videoDos{
-        width: 200px;
-        height: 200px;
-    }
-    .videoTres{
-        width: 200px;
-        height: 200px;
-    }
-    .videoCuatro{
-        width: 200px;
-        height: 200px;
-    }
-    /* main horarios */
-    .mainHorarios{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .imgHorarios{
-       width: 300px;
-       height: 500px;
-    }
-
-    /* main productos */
-    .mainProductos{
-    
-   
-        background-color:  rgb(109, 107, 107);
-        height: 100%;
-
-}
-}
-
-/* media querie medio */
-@media only screen and (min-width: 600px){
-
-    header{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 400px;
-        align-items: center;
-
-    }
-    
-    ul{
-        display: flex;
-       flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-    }
-    
-
-    /* main home */
-    .productosHome{
-        display: grid;
-        grid-template-columns: 45% 45%;
-        grid-template-rows: 30% 30% 30%;
-        grid-template-areas: "titulo titulo"
-                             "fotoUno fotoDos"
-                             "fotoTres .";
-        row-gap: 20px;
-    }
-    .nuestrosProductos{
-        grid-area: titulo;
-    }
-    .fotoDos{
-        grid-area: fotoUno;
-    }
-    .kitFuncional{
-        grid-area: fotoDos;
-    }
-    .trx{
-        grid-area: fotoTres;
-    }
-    /* main galeria */
-    .videoClases{
-        display: grid;
-        grid-template-columns: 45% 45%;
-        grid-template-rows: 45% 45%;
-        justify-items: center;
-        align-items: center;
-        column-gap: 10px;
-        row-gap: 50px;
-        height: 100%;
-    
-    
-    }
-    .videoUno{
-        width: 500px;
-        height: 500px;
-    }
-    .videoDos{
-        width: 500px;
-        height: 500px;
-    }
-    .videoTres{
-        width: 500px;
-        height: 500px;
-    }
-    .videoCuatro{
-        width: 500px;
-        height: 500px;
-    }
-
-    /* main productos */
-    .productos{
-        display: grid;
-        grid-template-columns: 45% 45%;
-        grid-template-rows: 30% 30% 30%;
-        grid-template-areas: "titulo titulo"
-                             "fotoUno fotoDos"
-                             "fotoTres fotoCuatro";
-        row-gap: 20px;
-    }
-    .contactanos{
-        grid-area: titulo;
-    }
-    /* main contacto */
-    .mainContacto{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-}
-
-
-/* media querie grande */
-@media only screen and (min-width: 992px){
-
-    header{
-        background-color: black;
-        height: 350px;
-        top: 10px;
-        display: flex;
-        align-items: flex-start;
-        
-    }
-    
-    .logoNombre{
-        display: inline-block;
-    }
-    
-    
-    
-    .logo{
-        
-        width: 200px;
-        height: 200px;
-        display: inline-block;
-        position: relative;
-        
-    }
-    
-    h1{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        display: inline-block;
-        color: blanchedalmond;
-        width: 200px;
-        text-align:center;
-        position: relative;
-        bottom: 20%;
-    }
-    
-    
-    .barraNavegacion{
-        display: flex;
-        justify-content: end;
-        align-items: flex-end;
-        width: 100%;
-        height: 100%;  
-    }
-    .navbar{
-        width: 100%;
-        bottom: 20px;
-    }
-    .navbar-nav{
-        width: 100%;
-        background-color: rgb(132, 50, 165);
-
-    }
-
- 
-    
-    
-    li{
-        display: inline-block;
-        background-color: rgb(132, 50, 165);
-        font-size: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-        height: 100%;
-        text-decoration: none;
-        position: relative;
-        top: 0%;
-        
-    
-    }
-    
-    
-    
-    a{
-        text-decoration: none;
-        color: white;
-    }
-    /* main home */
-    .productosHome{
-        grid-area: nuestrosProductos;
-        display: flex;
-        flex-direction: column;
-       justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .mainHome{
-        height: 1400px;
-    }
-    /* main productos */
-    .productos{
-        grid-area: nuestrosProductos;
-        display: flex;
-        flex-direction: column;
-       justify-content: space-evenly;
-        align-items: center;
-    }
-    .fotosProductos{
-        height: 250px;
-        width: 250px;
-    }
-    
-
-}
+    color: #8432a5;
+    font-size: 20px; }

@@ -1,0 +1,126 @@
+.nuestrasClases{
+    background-color: rgb(132, 50, 165) ;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+}
+
+
+.videoClases{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 50px;
+    height: 100%;
+    .videoUno{
+        width: 450px;
+        height: 450px;
+    }
+    .videoDos{
+        width: 450px;
+        height: 450px;
+    }
+    .videoTres{
+        width: 450px;
+        height: 450px;
+    }
+    .videoCuatro{
+        width: 450px;
+        height: 450px;
+    }
+
+
+}
+
+/* media querie mobile */
+@media only screen and (max-width: 600px){
+    .videoClases{
+        display: flex;
+        flex-direction: column;
+        .videoUno{
+            width: 200px;
+            height: 200px;
+        }
+        .videoDos{
+            width: 200px;
+            height: 200px;
+        }
+        .videoTres{
+            width: 200px;
+            height: 200px;
+        }
+        .videoCuatro{
+            width: 200px;
+            height: 200px;
+        }
+     }
+     
+    }
+
+    /* media querie medio */
+@media only screen and (min-width: 600px){
+    .videoClases{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 45% 45%;
+        justify-items: center;
+        align-items: center;
+        column-gap: 10px;
+        row-gap: 50px;
+        height: 100%;
+        .videoUno{
+            width: 250px;
+            height: 250px;
+        }
+        .videoDos{
+            width: 250px;
+            height: 250px;
+        }
+        .videoTres{
+            width: 250px;
+            height: 250px;
+        }
+        .videoCuatro{
+            width: 250px;
+            height: 250px;
+        }
+   
+    }
+}
+/* media querie grande */
+@media only screen and (min-width: 992px){
+    .videoClases{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 45% 45%;
+        justify-items: center;
+        align-items: center;
+        column-gap: 10px;
+        row-gap: 50px;
+        height: 100%;
+        .videoUno{
+            width: 450px;
+            height: 450px;
+        }
+        .videoDos{
+            width: 450px;
+            height: 450px;
+        }
+        .videoTres{
+            width: 450px;
+            height: 450px;
+        }
+        .videoCuatro{
+            width: 450px;
+            height: 450px;
+        }
+    
+    
+    }
+}
+
+
