@@ -2,71 +2,29 @@
   margin: 0;
   padding: 0; }
 
-header {
+header .navbar {
   background-color: black;
-  height: 350px;
-  top: 10px;
-  display: flex;
-  align-items: flex-start; }
-  header .logoNombre {
-    display: inline-block; }
-    header .logoNombre a {
-      text-decoration: none; }
-      header .logoNombre a .logo {
-        width: 200px;
-        height: 200px;
-        display: inline-block;
-        position: relative; }
-    header .logoNombre h1 {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      display: inline-block;
-      color: blanchedalmond;
-      width: 200px;
-      text-align: center;
-      position: relative;
-      bottom: 20%; }
-  header .barraNavegacion {
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
-    width: 100%;
-    height: 100%; }
-    header .barraNavegacion .navbar {
-      width: 100%;
-      bottom: 20px; }
-      header .barraNavegacion .navbar .navbar-nav {
-        width: 100%;
-        background-color: #8432a5;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around; }
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 216px 40px;
+  grid-template-areas: "nombre" "navBar"; }
+  header .navbar .logoNombre {
+    grid-area: nombre;
+    justify-self: center; }
+    header .navbar .logoNombre .logo {
+      width: 180px;
+      height: 150px; }
+  header .navbar .container-fluid {
+    grid-area: navBar; }
+    header .navbar .container-fluid .navbar-nav {
+      display: flex;
+      justify-content: space-around;
+      width: 100%; }
 
 /* media querie mobile */
 @media only screen and (max-width: 600px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 400px;
-    align-items: center; }
-    header .logo {
-      width: 150px;
-      height: 150px; }
-    header .container-fluid {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-    header .navbar-collapse {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-      header .navbar-collapse .navbar-nav {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; } }
+  .navbar {
+    height: 350px; } }
 
 body {
   background-color: #6d6b6b; }
@@ -140,7 +98,7 @@ body {
       position: fixed;
       bottom: 10px;
       right: 10px;
-      width: 70px;
+      width: 60px;
       height: 60px; }
 
 .nuestrasClases, .nuestrosHorarios, .mainProductos .nuestrosProductos, .divContactanos .contactanos, .comoLlegar .tituloComoLlegar {
