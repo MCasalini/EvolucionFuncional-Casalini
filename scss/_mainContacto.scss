@@ -77,8 +77,10 @@
     }
     
     .mapa{
+        position: relative;
+        top: 40px;
         height: 400px;
-        width: 400px;
+        width: 70%;
         
     }
 }

@@ -22,7 +22,7 @@ header .navbar {
       width: 100%; }
 
 /* media querie mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   .navbar {
     height: 350px; } }
 
@@ -196,6 +196,11 @@ body {
       width: 450px;
       height: 450px; } }
 
+/* media querie mobile */
+@media only screen and (max-width: 992px) {
+  .mainHorarios {
+    overflow: scroll; } }
+
 .mainProductos {
   background-color: #6d6b6b;
   height: 2500px; }
@@ -265,13 +270,15 @@ body {
   justify-content: space-around;
   align-items: center; }
   .comoLlegar .mapa {
+    position: relative;
+    top: 40px;
     height: 400px;
-    width: 400px; }
+    width: 70%; }
 
 footer {
   background-color: black;
   display: grid;
-  height: 400px;
+  height: 250px;
   grid-template-columns: 30%, 25%, 25%;
   grid-template-rows: 20%, 20%, 20%, 20%;
   grid-template-areas: "area3 area1 area2" "area3 area4 area5" "area3 area6 area7" "area8 area8 area8"; }
