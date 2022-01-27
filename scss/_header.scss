@@ -1,49 +1,35 @@
 
-header{
+.barraNavegacion{
+    position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 100;
     .navbar{
         background-color: black;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 216px 40px;
-        grid-template-areas: "nombre"
-                             "navBar";
-        .logoNombre{
-            grid-area: nombre;
-            justify-self: center;
-            
-            .logo{
-                width: 180px;
-                height: 150px;
-            }
-        }
+        
+        display: flex;
+        
         .container-fluid{
-            grid-area: navBar;
             
+            align-items: flex-end;
+            .logoNombre{
+                a{
+                    text-decoration: none;
+                    h1{
+                        color: rgb(77, 70, 75);
+                        font-size: 90%;
+                    }
+                }
+            }
+            .navbar-collapse{
+                
                 .navbar-nav{
                     display: flex;
-                    justify-content: space-around;
+                    justify-content:space-around;
                     width: 100%;
                 }
-            
-    
+            }
         }
-    
     }
-
-
 }
-/* media querie mobile */
-@media only screen and (max-width: 992px){
-   .navbar{
-       height: 350px;
-   }
-}
-
-
-
-
-
-
-
-
-
