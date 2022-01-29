@@ -1,10 +1,38 @@
 .nuestrosHorarios{
     @extend .nuestrasClases;
 }
+.tablaHorarios{
+  padding: 20px;
+}
+.cuidados{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .nuestrosCuidados{
+    @extend .nuestrasClases;
+  }
+  .imgProtocolo{
+    width: 60%;
+    height: 50%;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+  }
+}
 
 /* media querie mobile */
 @media only screen and (max-width: 992px){
-  .mainHorarios{
+  .tablaHorarios{
     overflow: scroll;
+    padding: 20px;
   }
+  .tablaHorarios{
+    padding: 20px;
+  }
+  .cuidados{
+  .imgProtocolo{
+    width: 90%;
+    height: 80%;
+  }
+}
 }

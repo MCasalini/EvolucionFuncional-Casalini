@@ -1,21 +1,58 @@
 .mainProductos{
     
    
-    background-color:  rgb(109, 107, 107);
-    height: 2500px;
+    background-color:  $colorBackground;
     .nuestrosProductos{
         @extend .nuestrasClases;
     }
-
-    .productos{
-        display: flex;
+    /* media querie mobile */
+    @media only screen and (max-width: 600px){
+        .productos{
+            display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        height: 100%;
         align-items: center;
+        .card{
+            margin: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+        }
+    }
+
+    /* media querie medio */
+    @media only screen and (min-width: 600px){
+        .productos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        justify-items: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+            .card{
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            margin: 10px;
+            }
+        }
+    }
+    /* media querie grande */
+    @media only screen and (min-width: 992px){
+    .productos{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 30% 30% 30%;
+        justify-items: center;
+        align-items: center;
+        row-gap: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10%;
+            .card{
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            }
         
         }
 
+    }
 }
 
 

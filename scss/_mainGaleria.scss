@@ -6,75 +6,59 @@
     width: 100%;
 }
 
-
-.videoClases{
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 45% 45%;
-    justify-items: center;
-    align-items: center;
-    column-gap: 10px;
-    row-gap: 50px;
-    height: 100%;
-    
-    
-    .videoUno{
-        width: 450px;
-        height: 450px;
-    }
-
-    .videoDos{
-        width: 450px;
-        height: 450px;
-    }
-    .videoTres{
-        width: 450px;
-        height: 450px;
-    }
-    .videoCuatro{
-        width: 450px;
-        height: 450px;
-    }
-
-
-}
-
 /* media querie mobile */
 @media only screen and (max-width: 600px){
     .videoClases{
         display: flex;
         flex-direction: column;
+        align-items: center;
+
         .videoUno{
+            margin: 10px;
             width: 200px;
             height: 200px;
         }
         .videoDos{
+            margin: 10px;
             width: 200px;
             height: 200px;
         }
         .videoTres{
+            margin: 10px;
             width: 200px;
             height: 200px;
         }
         .videoCuatro{
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+        }
+        .videoCinco{
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+        }
+        .videoSeis{
+            margin: 10px;
             width: 200px;
             height: 200px;
         }
      }
      
-    }
+}
 
     /* media querie medio */
 @media only screen and (min-width: 600px){
     .videoClases{
         display: grid;
-        grid-template-columns: 45% 45%;
-        grid-template-rows: 45% 45%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30% 30% 30%;
         justify-items: center;
         align-items: center;
-        column-gap: 10px;
         row-gap: 50px;
-        height: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
         .videoUno{
             width: 250px;
             height: 250px;
@@ -91,20 +75,27 @@
             width: 250px;
             height: 250px;
         }
-   
+        .videoCinco{
+            width: 250px;
+            height: 250px;
+        }
+        .videoSeis{
+            width: 250px;
+            height: 250px;
+        }
     }
 }
 /* media querie grande */
 @media only screen and (min-width: 992px){
     .videoClases{
         display: grid;
-        grid-template-columns: 45% 45%;
-        grid-template-rows: 45% 45%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30% 30% 30%;
         justify-items: center;
         align-items: center;
-        column-gap: 10px;
         row-gap: 50px;
-        height: 100%;
+        margin-top: 20px;
+
         .videoUno{
             width: 450px;
             height: 450px;
@@ -121,8 +112,14 @@
             width: 450px;
             height: 450px;
         }
-    
-    
+        .videoCinco{
+            width: 450px;
+            height: 450px;
+        }
+        .videoSeis{
+            width: 450px;
+            height: 450px;
+        }
     }
 }
 

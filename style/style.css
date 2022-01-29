@@ -26,124 +26,96 @@
 body {
   background-color: #6d6b6b;
   margin-top: 140px; }
-  body main {
-    background-color: #6d6b6b;
-    height: 1600px; }
-    body main .mainHome {
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: 500px 70px 800px;
-      grid-template-areas: "banner" "nuestrasClases" "nuestrosProductos"; }
-    body main .carousel-inner {
-      grid-area: banner;
-      width: 100%;
-      height: 100%;
-      padding: 5%; }
-    body main .clasesHome {
-      grid-area: nuestrasClases;
-      background-color: black;
-      text-decoration: none; }
-      body main .clasesHome a {
-        text-decoration: none; }
-        body main .clasesHome a h2 {
-          color: #8432a5;
-          text-decoration: none;
-          text-align: center; }
-        body main .clasesHome a .verClasesAca {
-          color: #8432a5;
-          text-decoration: none;
-          text-align: center;
-          font-size: 40px;
-          animation-name: opaco;
-          animation-duration: 5s;
-          animation-iteration-count: infinite; }
+  body .carousel-inner {
+    padding: 5%; }
+  body .clasesHome {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px; }
+    body .clasesHome img {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); }
+    body .clasesHome img:hover {
+      width: 110%;
+      height: 110%; }
+  body .texto {
+    display: flex;
+    justify-content: space-around; }
+    body .texto .articulo {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      background-color: #948d91;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: justify;
+      margin: 5px;
+      padding: 15px; }
+      body .texto .articulo h3 {
+        text-align: center;
+        text-decoration: underline; }
+    body .texto .aside {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      background-color: #444444;
+      color: white;
+      margin: 5px;
+      padding: 15px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: justify; }
+      body .texto .aside h3 {
+        text-align: center;
+        text-decoration: underline; }
+  body .iconoWhatsapp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #8432a5;
+    font-size: 300%; }
 
-@keyframes opaco {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-    body main .productosHome {
-      grid-area: nuestrosProductos;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center; }
-      body main .productosHome .fotoDos {
-        width: 200px;
-        height: 200px; }
-      body main .productosHome .kitFuncional {
-        width: 200px;
-        height: 200px;
-        margin-top: 40px; }
-      body main .productosHome .trx {
-        width: 200px;
-        height: 200px;
-        margin-top: 40px; }
-      body main .productosHome .nuestrosProductos {
-        color: black; }
-      body main .productosHome .fotoDos:hover {
-        width: 250px;
-        height: 250px; }
-      body main .productosHome .kitFuncional:hover {
-        width: 250px;
-        height: 250px; }
-      body main .productosHome .trx:hover {
-        width: 250px;
-        height: 250px; }
-    body main div {
-      margin-top: 20px; }
-    body main .iconoWhatsapp {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      color: #8432a5;
-      font-size: 300%; }
+@media only screen and (max-width: 992px) {
+  .clasesHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 700px;
+    margin-bottom: 30px; }
+  .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; } }
 
-.nuestrasClases, .nuestrosHorarios, .mainProductos .nuestrosProductos, .divContactanos .contactanos, .comoLlegar .tituloComoLlegar {
+.nuestrasClases, .nuestrosHorarios, .cuidados .nuestrosCuidados, .mainProductos .nuestrosProductos, .divContactanos .contactanos, .comoLlegar .tituloComoLlegar {
   background-color: #8432a5;
   color: black;
   text-align: center;
   font-size: 40px;
   width: 100%; }
 
-.videoClases {
-  display: grid;
-  grid-template-columns: 45% 45%;
-  grid-template-rows: 45% 45%;
-  justify-items: center;
-  align-items: center;
-  column-gap: 10px;
-  row-gap: 50px;
-  height: 100%; }
-  .videoClases .videoUno {
-    width: 450px;
-    height: 450px; }
-  .videoClases .videoDos {
-    width: 450px;
-    height: 450px; }
-  .videoClases .videoTres {
-    width: 450px;
-    height: 450px; }
-  .videoClases .videoCuatro {
-    width: 450px;
-    height: 450px; }
-
 /* media querie mobile */
 @media only screen and (max-width: 600px) {
   .videoClases {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
     .videoClases .videoUno {
+      margin: 10px;
       width: 200px;
       height: 200px; }
     .videoClases .videoDos {
+      margin: 10px;
       width: 200px;
       height: 200px; }
     .videoClases .videoTres {
+      margin: 10px;
       width: 200px;
       height: 200px; }
     .videoClases .videoCuatro {
+      margin: 10px;
+      width: 200px;
+      height: 200px; }
+    .videoClases .videoCinco {
+      margin: 10px;
+      width: 200px;
+      height: 200px; }
+    .videoClases .videoSeis {
+      margin: 10px;
       width: 200px;
       height: 200px; } }
 
@@ -151,13 +123,13 @@ body {
 @media only screen and (min-width: 600px) {
   .videoClases {
     display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 45% 45%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30% 30%;
     justify-items: center;
     align-items: center;
-    column-gap: 10px;
     row-gap: 50px;
-    height: 100%; }
+    margin-top: 20px;
+    margin-bottom: 20px; }
     .videoClases .videoUno {
       width: 250px;
       height: 250px; }
@@ -168,6 +140,12 @@ body {
       width: 250px;
       height: 250px; }
     .videoClases .videoCuatro {
+      width: 250px;
+      height: 250px; }
+    .videoClases .videoCinco {
+      width: 250px;
+      height: 250px; }
+    .videoClases .videoSeis {
       width: 250px;
       height: 250px; } }
 
@@ -175,13 +153,12 @@ body {
 @media only screen and (min-width: 992px) {
   .videoClases {
     display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 45% 45%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30% 30%;
     justify-items: center;
     align-items: center;
-    column-gap: 10px;
     row-gap: 50px;
-    height: 100%; }
+    margin-top: 20px; }
     .videoClases .videoUno {
       width: 450px;
       height: 450px; }
@@ -193,22 +170,77 @@ body {
       height: 450px; }
     .videoClases .videoCuatro {
       width: 450px;
+      height: 450px; }
+    .videoClases .videoCinco {
+      width: 450px;
+      height: 450px; }
+    .videoClases .videoSeis {
+      width: 450px;
       height: 450px; } }
+
+.tablaHorarios {
+  padding: 20px; }
+
+.cuidados {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .cuidados .imgProtocolo {
+    width: 60%;
+    height: 50%;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px; }
 
 /* media querie mobile */
 @media only screen and (max-width: 992px) {
-  .mainHorarios {
-    overflow: scroll; } }
+  .tablaHorarios {
+    overflow: scroll;
+    padding: 20px; }
+  .tablaHorarios {
+    padding: 20px; }
+  .cuidados .imgProtocolo {
+    width: 90%;
+    height: 80%; } }
 
 .mainProductos {
   background-color: #6d6b6b;
-  height: 2500px; }
-  .mainProductos .productos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    align-items: center; }
+  /* media querie mobile */
+  /* media querie medio */
+  /* media querie grande */ }
+  @media only screen and (max-width: 600px) {
+    .mainProductos .productos {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .mainProductos .productos .card {
+        margin: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); } }
+  @media only screen and (min-width: 600px) {
+    .mainProductos .productos {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 20% 20% 20% 20% 20%;
+      justify-items: center;
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      .mainProductos .productos .card {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        margin: 10px; } }
+  @media only screen and (min-width: 992px) {
+    .mainProductos .productos {
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+      grid-template-rows: 30% 30% 30%;
+      justify-items: center;
+      align-items: center;
+      row-gap: 50px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 10%; }
+      .mainProductos .productos .card {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); } }
 
 .divContactanos {
   display: flex;
