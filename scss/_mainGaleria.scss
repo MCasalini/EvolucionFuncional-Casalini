@@ -1,55 +1,59 @@
-.nuestrasClases{
-    background-color: rgb(132, 50, 165) ;
+.nuestrasClases {
+    background-color: rgb(132, 50, 165);
     color: black;
     text-align: center;
     font-size: 40px;
     width: 100%;
 }
 
-/* media querie mobile */
-@media only screen and (max-width: 600px){
-    .videoClases{
+@mixin video ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+// /* media querie mobile */
+@media only screen and (max-width: 600px) {
+    .videoClases {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        .videoUno{
+        .videoUno {
             margin: 10px;
-            width: 200px;
-            height: 200px;
+            @include video (200px, 200px);
         }
-        .videoDos{
+
+        .videoDos {
             margin: 10px;
-            width: 200px;
-            height: 200px;
+            @include video (200px, 200px);
         }
-        .videoTres{
+
+        .videoTres {
             margin: 10px;
-            width: 200px;
-            height: 200px;
+            @include video (200px, 200px);
         }
-        .videoCuatro{
+
+        .videoCuatro {
             margin: 10px;
-            width: 200px;
-            height: 200px;
+            @include video (200px, 200px);
         }
-        .videoCinco{
+
+        .videoCinco {
             margin: 10px;
-            width: 200px;
-            height: 200px;
+            @include video (200px, 200px);
         }
-        .videoSeis{
+
+        .videoSeis {
             margin: 10px;
-            width: 200px;
-            height: 200px;
+            @include video (200px, 200px);
         }
-     }
-     
+    }
+
 }
 
-    /* media querie medio */
-@media only screen and (min-width: 600px){
-    .videoClases{
+/* media querie medio */
+@media only screen and (min-width: 600px) {
+    .videoClases {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 30% 30% 30%;
@@ -59,35 +63,35 @@
         margin-top: 20px;
         margin-bottom: 20px;
 
-        .videoUno{
-            width: 250px;
-            height: 250px;
+        .videoUno {
+            @include video (250px, 250px);
         }
-        .videoDos{
-            width: 250px;
-            height: 250px;
+
+        .videoDos {
+            @include video (250px, 250px);
         }
-        .videoTres{
-            width: 250px;
-            height: 250px;
+
+        .videoTres {
+            @include video (250px, 250px);
         }
-        .videoCuatro{
-            width: 250px;
-            height: 250px;
+
+        .videoCuatro {
+            @include video (250px, 250px);
         }
-        .videoCinco{
-            width: 250px;
-            height: 250px;
+
+        .videoCinco {
+            @include video (250px, 250px);
         }
-        .videoSeis{
-            width: 250px;
-            height: 250px;
+
+        .videoSeis {
+            @include video (250px, 250px);
         }
     }
 }
-/* media querie grande */
-@media only screen and (min-width: 992px){
-    .videoClases{
+
+// /* media querie grande */
+@media only screen and (min-width: 992px) {
+    .videoClases {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 30% 30% 30%;
@@ -96,31 +100,28 @@
         row-gap: 50px;
         margin-top: 20px;
 
-        .videoUno{
-            width: 450px;
-            height: 450px;
+        .videoUno {
+            @include video (450px, 450px);
         }
-        .videoDos{
-            width: 450px;
-            height: 450px;
+
+        .videoDos {
+            @include video (450px, 450px);
         }
-        .videoTres{
-            width: 450px;
-            height: 450px;
+
+        .videoTres {
+            @include video (450px, 450px);
         }
-        .videoCuatro{
-            width: 450px;
-            height: 450px;
+
+        .videoCuatro {
+            @include video (450px, 450px);
         }
-        .videoCinco{
-            width: 450px;
-            height: 450px;
+
+        .videoCinco {
+            @include video (450px, 450px);
         }
-        .videoSeis{
-            width: 450px;
-            height: 450px;
+
+        .videoSeis {
+            @include video (450px, 450px);
         }
     }
 }
-
-

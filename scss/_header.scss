@@ -1,32 +1,35 @@
-
-.barraNavegacion{
+.barraNavegacion {
     position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 100;
-    .navbar{
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+
+    .navbar {
         background-color: black;
-        
+
         display: flex;
-        
-        .container-fluid{
-            
+
+        .container-fluid {
+
             align-items: flex-end;
-            .logoNombre{
-                a{
+
+            .logoNombre {
+                a {
                     text-decoration: none;
-                    h1{
+
+                    h1 {
                         color: rgb(77, 70, 75);
                         font-size: 90%;
                     }
                 }
             }
-            .navbar-collapse{
-                
-                .navbar-nav{
+
+            .navbar-collapse {
+
+                .navbar-nav {
                     display: flex;
-                    justify-content:space-around;
+                    justify-content: space-around;
                     width: 100%;
                 }
             }

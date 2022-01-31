@@ -33,10 +33,11 @@ body {
     justify-content: space-around;
     margin-bottom: 30px; }
     body .clasesHome img {
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); }
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      transition: 1s; }
     body .clasesHome img:hover {
-      width: 110%;
-      height: 110%; }
+      width: 400px;
+      height: 247px; }
   body .texto {
     display: flex;
     justify-content: space-around; }
@@ -68,6 +69,7 @@ body {
     color: #8432a5;
     font-size: 300%; }
 
+/* media querie medio */
 @media only screen and (max-width: 992px) {
   .clasesHome {
     display: flex;
@@ -81,14 +83,13 @@ body {
     flex-direction: column;
     justify-content: space-around; } }
 
-.nuestrasClases, .nuestrosHorarios, .cuidados .nuestrosCuidados, .mainProductos .nuestrosProductos, .divContactanos .contactanos, .comoLlegar .tituloComoLlegar {
+.nuestrasClases, .nuestrosHorarios, .cuidados .nuestrosCuidados, .mainProductos .nuestrosProductos, .contactanos {
   background-color: #8432a5;
   color: black;
   text-align: center;
   font-size: 40px;
   width: 100%; }
 
-/* media querie mobile */
 @media only screen and (max-width: 600px) {
   .videoClases {
     display: flex;
@@ -149,7 +150,6 @@ body {
       width: 250px;
       height: 250px; } }
 
-/* media querie grande */
 @media only screen and (min-width: 992px) {
   .videoClases {
     display: grid;
@@ -204,107 +204,98 @@ body {
     height: 80%; } }
 
 .mainProductos {
-  background-color: #6d6b6b;
-  /* media querie mobile */
-  /* media querie medio */
-  /* media querie grande */ }
-  @media only screen and (max-width: 600px) {
-    .mainProductos .productos {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .mainProductos .productos .card {
-        margin: 10px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); } }
-  @media only screen and (min-width: 600px) {
-    .mainProductos .productos {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: 20% 20% 20% 20% 20%;
-      justify-items: center;
-      align-items: center;
-      margin-top: 10px;
-      margin-bottom: 10px; }
-      .mainProductos .productos .card {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-        margin: 10px; } }
-  @media only screen and (min-width: 992px) {
-    .mainProductos .productos {
-      display: grid;
-      grid-template-columns: 30% 30% 30%;
-      grid-template-rows: 30% 30% 30%;
-      justify-items: center;
-      align-items: center;
-      row-gap: 50px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-left: 10%; }
-      .mainProductos .productos .card {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); } }
+  background-color: #6d6b6b; }
+
+/* media querie mobile */
+@media only screen and (max-width: 600px) {
+  .productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .productos .card {
+      margin: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); } }
+
+/* media querie medio */
+@media only screen and (min-width: 600px) {
+  .productos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .productos .card {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      margin: 10px; } }
+
+/* media querie grande */
+@media only screen and (min-width: 992px) {
+  .productos {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
+    justify-items: center;
+    align-items: center;
+    row-gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%; }
+    .productos .card {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); } }
 
 .divContactanos {
+  background-image: linear-gradient(to right, black, #a7799b);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center; }
+  padding: 5%;
+  margin: 3%; }
   .divContactanos .formularioContacto {
-    width: 500px; }
+    width: 30%;
+    color: white; }
     .divContactanos .formularioContacto .formContacto {
-      display: grid;
-      grid-template-columns: 45% 45%;
-      grid-template-rows: 10% 10% 20% 10% 10%;
-      grid-template-areas: "nombre apellido" "mail telefono" "consulta consulta" "checkbox aceptoT" "reset enviar";
-      width: 500px; }
-      .divContactanos .formularioContacto .formContacto .nombre {
-        grid-area: nombre;
-        font-size: 25px;
-        font-family: Verdana;
-        background-color: #ad9bac; }
-      .divContactanos .formularioContacto .formContacto .apellido {
-        grid-area: apellido;
-        font-size: 25px;
-        font-family: Verdana;
-        background-color: #ad9bac; }
-      .divContactanos .formularioContacto .formContacto .mail {
-        grid-area: mail;
-        font-size: 25px;
-        font-family: Verdana;
-        background-color: #ad9bac; }
-      .divContactanos .formularioContacto .formContacto .telefono {
-        grid-area: telefono;
-        font-size: 25px;
-        font-family: Verdana;
-        background-color: #ad9bac; }
-      .divContactanos .formularioContacto .formContacto .consulta {
-        grid-area: consulta;
-        font-size: 25px;
-        font-family: Verdana;
-        background-color: #ad9bac; }
+      display: flex;
+      flex-direction: column; }
+      .divContactanos .formularioContacto .formContacto input {
+        margin-top: 3%; }
+      .divContactanos .formularioContacto .formContacto textarea {
+        margin-top: 3%; }
+      .divContactanos .formularioContacto .formContacto .genero {
+        margin-top: 3%;
+        width: 30%; }
+      .divContactanos .formularioContacto .formContacto .entrenamiento {
+        display: flex;
+        justify-content: space-around;
+        margin: 3%; }
       .divContactanos .formularioContacto .formContacto .checkbox {
-        grid-area: checkbox; }
-      .divContactanos .formularioContacto .formContacto .aceptoT {
-        grid-area: aceptoT; }
-      .divContactanos .formularioContacto .formContacto .reset {
-        grid-area: reset;
-        font-size: 25px;
-        font-family: Verdana;
-        background-color: #ec5959; }
-      .divContactanos .formularioContacto .formContacto .enviar {
-        grid-area: enviar;
-        font-size: 25px;
-        font-family: Verdana;
-        background-color: #60f078; }
+        margin: 3%; }
+      .divContactanos .formularioContacto .formContacto .botones {
+        display: flex;
+        justify-content: space-around; }
+        .divContactanos .formularioContacto .formContacto .botones .reset, .divContactanos .formularioContacto .formContacto .botones .enviar {
+          background-color: #444444;
+          color: white;
+          height: 35px;
+          border-radius: 20px;
+          padding: 5px 20px;
+          border: none;
+          transition: 0.5s; }
+        .divContactanos .formularioContacto .formContacto .botones .reset:hover, .divContactanos .formularioContacto .formContacto .botones .enviar:hover {
+          background-color: #8432a5; }
+  .divContactanos .comoLlegar .mapa {
+    margin-top: 40%;
+    width: 100%;
+    height: 50%; }
 
-.comoLlegar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; }
-  .comoLlegar .mapa {
-    position: relative;
-    top: 40px;
-    height: 400px;
-    width: 70%; }
+/* media querie mobile */
+@media only screen and (max-width: 600px) {
+  .divContactanos {
+    display: flex;
+    flex-direction: column; }
+    .divContactanos .formularioContacto {
+      width: 100%; } }
 
 footer {
   background-color: black;
@@ -326,3 +317,22 @@ footer {
   footer .copyright {
     color: white;
     font-size: 20px; }
+
+/* media querie mobile */
+@media only screen and (max-width: 600px) {
+  footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    footer .redes {
+      margin-left: 3%;
+      font-size: 50%; }
+    footer .sobreNos {
+      font-size: 10px; }
+      footer .sobreNos p {
+        margin-bottom: 0; }
+    footer .copyright {
+      margin-right: 3%;
+      font-size: 50%;
+      margin-bottom: 0; } }

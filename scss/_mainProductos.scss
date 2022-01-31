@@ -1,26 +1,30 @@
-.mainProductos{
-    
-   
-    background-color:  $colorBackground;
-    .nuestrosProductos{
+.mainProductos {
+    background-color: $colorBackground;
+
+    .nuestrosProductos {
         @extend .nuestrasClases;
     }
-    /* media querie mobile */
-    @media only screen and (max-width: 600px){
-        .productos{
-            display: flex;
+}
+
+/* media querie mobile */
+@media only screen and (max-width: 600px) {
+
+    .productos {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        .card{
+
+        .card {
             margin: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
         }
-        }
     }
+}
 
-    /* media querie medio */
-    @media only screen and (min-width: 600px){
-        .productos{
+/* media querie medio */
+@media only screen and (min-width: 600px) {
+
+    .productos {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 20% 20% 20% 20% 20%;
@@ -28,15 +32,18 @@
         align-items: center;
         margin-top: 10px;
         margin-bottom: 10px;
-            .card{
+
+        .card {
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
             margin: 10px;
-            }
         }
     }
-    /* media querie grande */
-    @media only screen and (min-width: 992px){
-    .productos{
+}
+
+/* media querie grande */
+@media only screen and (min-width: 992px) {
+
+    .productos {
         display: grid;
         grid-template-columns: 30% 30% 30%;
         grid-template-rows: 30% 30% 30%;
@@ -46,13 +53,11 @@
         margin-top: 20px;
         margin-bottom: 20px;
         margin-left: 10%;
-            .card{
+
+        .card {
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-            }
-        
         }
 
     }
+
 }
-
-

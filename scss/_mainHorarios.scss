@@ -1,17 +1,21 @@
-.nuestrosHorarios{
-    @extend .nuestrasClases;
+.nuestrosHorarios {
+  @extend .nuestrasClases;
 }
-.tablaHorarios{
+
+.tablaHorarios {
   padding: 20px;
 }
-.cuidados{
+
+.cuidados {
   display: flex;
   flex-direction: column;
   align-items: center;
-  .nuestrosCuidados{
+
+  .nuestrosCuidados {
     @extend .nuestrasClases;
   }
-  .imgProtocolo{
+
+  .imgProtocolo {
     width: 60%;
     height: 50%;
     padding: 15px;
@@ -21,18 +25,20 @@
 }
 
 /* media querie mobile */
-@media only screen and (max-width: 992px){
-  .tablaHorarios{
+@media only screen and (max-width: 992px) {
+  .tablaHorarios {
     overflow: scroll;
     padding: 20px;
   }
-  .tablaHorarios{
+
+  .tablaHorarios {
     padding: 20px;
   }
-  .cuidados{
-  .imgProtocolo{
-    width: 90%;
-    height: 80%;
+
+  .cuidados {
+    .imgProtocolo {
+      width: 90%;
+      height: 80%;
+    }
   }
-}
 }

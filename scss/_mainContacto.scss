@@ -1,86 +1,88 @@
-.divContactanos{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    .contactanos{
-        @extend .nuestrasClases;
-    }
-    
-    .formularioContacto{
-        width: 500px;
-        .formContacto{
-            display: grid;
-            grid-template-columns: 45% 45%;
-            grid-template-rows: 10% 10% 20% 10% 10%;
-            grid-template-areas: "nombre apellido"
-                                 "mail telefono"
-                                 "consulta consulta"
-                                 "checkbox aceptoT"
-                                 "reset enviar";
-            width: 500px;
-            @mixin fContacto ($tamLetra, $famLetra, $colorFondo) {
-            font-size: $tamLetra;
-            font-family: $famLetra;
-            background-color: $colorFondo;    
-            }
-            .nombre{
-                grid-area: nombre;
-                @include fContacto(25px,Verdana ,rgb(173, 155, 172) )
-            }
-            .apellido{
-                grid-area: apellido;
-                @include fContacto(25px,Verdana ,rgb(173, 155, 172) )
-            }
-            .mail{
-                grid-area: mail;
-                @include fContacto(25px,Verdana ,rgb(173, 155, 172) )
-            }
-            .telefono{
-                grid-area: telefono;
-                @include fContacto(25px,Verdana ,rgb(173, 155, 172) )
-            }
-            .consulta{
-                grid-area: consulta;
-                @include fContacto(25px,Verdana ,rgb(173, 155, 172) )
-            }
-            .checkbox{
-                grid-area: checkbox;
-            
-            }
-            .aceptoT{
-                grid-area: aceptoT;
-    
-            }
-            .reset{
-                grid-area: reset;
-                @include fContacto(25px,Verdana ,rgb(236, 89, 89) )
-            }
-            .enviar{
-                grid-area: enviar;
-                @include fContacto(25px,Verdana ,rgb(96, 240, 120) )
-            }
-            
-        }
-       
-    }
-   
+.contactanos {
+    @extend .nuestrasClases;
 }
 
-.comoLlegar{
+.divContactanos {
+    background-image: linear-gradient(to right, black, rgb(167, 121, 155));
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    .tituloComoLlegar{
-        @extend .nuestrasClases;
+    padding: 5%;
+    margin: 3%;
+
+    .formularioContacto {
+        width: 30%;
+        color: white;
+
+        .formContacto {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                margin-top: 3%;
+            }
+
+            textarea {
+                margin-top: 3%;
+            }
+
+            .genero {
+                margin-top: 3%;
+                width: 30%;
+            }
+
+            .entrenamiento {
+                display: flex;
+                justify-content: space-around;
+                margin: 3%;
+            }
+
+            .checkbox {
+                margin: 3%;
+            }
+
+            .botones {
+                display: flex;
+                justify-content: space-around;
+
+                .reset {
+                    background-color: rgb(68, 68, 68);
+                    color: white;
+                    height: 35px;
+                    border-radius: 20px;
+                    padding: 5px 20px;
+                    border: none;
+                    transition: 0.5s;
+                }
+
+                .reset:hover {
+                    background-color: rgb(132, 50, 165);
+                }
+
+                .enviar {
+                    @extend .reset;
+                }
+            }
+        }
     }
-    
-    .mapa{
-        position: relative;
-        top: 40px;
-        height: 400px;
-        width: 70%;
-        
+
+    .comoLlegar {
+        .mapa {
+            margin-top: 40%;
+            width: 100%;
+            height: 50%;
+        }
+    }
+}
+
+/* media querie mobile */
+@media only screen and (max-width: 600px) {
+    .divContactanos {
+        display: flex;
+        flex-direction: column;
+
+        .formularioContacto {
+            width: 100%;
+        }
     }
 }
